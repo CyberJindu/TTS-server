@@ -14,10 +14,38 @@ logger = logging.getLogger(__name__)
 
 # Configuration - you'll set these when running
 API_KEY = None
+#ALLOWED_VOICES = [
+    #"alloy", "echo", "fable", "onyx", "nova", "shimmer",  # OpenAI compatible
+    #"en-US-JennyNeural", "en-US-GuyNeural",  # Edge TTS specific
+    #"en-GB-SoniaNeural", "en-AU-WilliamNeural"
+#]
+
 ALLOWED_VOICES = [
-    "alloy", "echo", "fable", "onyx", "nova", "shimmer",  # OpenAI compatible
-    "en-US-JennyNeural", "en-US-GuyNeural",  # Edge TTS specific
-    "en-GB-SoniaNeural", "en-AU-WilliamNeural"
+    # English voices
+    "en-US-JennyNeural", "en-US-GuyNeural",
+    "en-GB-SoniaNeural", "en-AU-WilliamNeural",
+    # Spanish
+    "es-ES-ElviraNeural", "es-MX-DaliaNeural",
+    # French
+    "fr-FR-DeniseNeural", "fr-FR-HenriNeural",
+    # German
+    "de-DE-KatjaNeural", "de-DE-ConradNeural",
+    # Italian
+    "it-IT-ElsaNeural", "it-IT-IsabellaNeural",
+    # Portuguese
+    "pt-BR-FranciscaNeural", "pt-PT-FernandaNeural",
+    # Russian
+    "ru-RU-DariyaNeural", "ru-RU-SvetlanaNeural",
+    # Japanese
+    "ja-JP-NanamiNeural", "ja-JP-KeitaNeural",
+    # Korean
+    "ko-KR-SunHiNeural", "ko-KR-InJoonNeural",
+    # Chinese
+    "zh-CN-XiaoxiaoNeural", "zh-CN-YunyangNeural",
+    # Arabic
+    "ar-SA-ZariyahNeural", "ar-EG-ShakirNeural",
+    # Hindi
+    "hi-IN-SwaraNeural", "hi-IN-MadhurNeural"
 ]
 
 
