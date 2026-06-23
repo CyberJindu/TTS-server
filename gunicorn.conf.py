@@ -1,15 +1,19 @@
+import os
 import multiprocessing
 
+# Get port from environment
+port = os.environ.get('PORT', '5001')
+
 # Bind to port
-bind = "0.0.0.0:5001"
+bind = f"0.0.0.0:{port}"
 
 # Number of worker processes
 workers = multiprocessing.cpu_count() * 2 + 1
 
-# Worker type (sync, gevent, etc.)
+# Worker type
 worker_class = "sync"
 
-# Timeout in seconds
+# Timeout
 timeout = 120
 
 # Logging
@@ -17,9 +21,9 @@ accesslog = "-"
 errorlog = "-"
 loglevel = "info"
 
-# Preload app for better performance
+# Preload app
 preload_app = True
 
-# Max requests before worker restart (prevents memory leaks)
+# Max requests
 max_requests = 1000
 max_requests_jitter = 100
