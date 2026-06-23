@@ -3,6 +3,7 @@ import multiprocessing
 
 # Get port from environment
 port = os.environ.get('PORT', '5001')
+print(f"🔧 Gunicorn config loaded! Using port: {port}")
 
 # Bind to port
 bind = f"0.0.0.0:{port}"
